@@ -9,6 +9,9 @@ import br.fbv.cryptosvault.R;
 import br.fbv.cryptosvault.model.account.AccountManager;
 import br.fbv.cryptosvault.model.util.Util;
 
+/**
+ * @author  Rogério
+ */
 public class TabHostActivity extends TabActivity  {
 
 	private static final int OPEN = 0;
@@ -16,6 +19,10 @@ public class TabHostActivity extends TabActivity  {
 	private static final int NEW_USER = 2;
 	private static final int CLOSE = 3;
 
+	/**
+	 * @uml.property  name="accountManager"
+	 * @uml.associationEnd  
+	 */
 	private AccountManager accountManager;
 	private TabHost tabHost;
 	private Menu mainMenu;

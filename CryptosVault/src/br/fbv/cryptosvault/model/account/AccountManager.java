@@ -8,24 +8,30 @@ import br.fbv.cryptosvault.model.objects.User;
 import br.fbv.cryptosvault.model.persistence.repositories.UserRepository;
 
 /**
- * Project: Cryptos Vault Class: AccountManager
- * 
- * REVISION HISTORY
- * 
- * Date Developer Comment ----------
- * --------------------------------------------
- * ---------------------------------------------- 12/11/2011 "Rogério Peixoto"
- * <rcbpeixoto@gmail.com> Initial Draft ----------
- * --------------------------------------------
- * ----------------------------------------------
+ * Project: Cryptos Vault Class: AccountManager REVISION HISTORY Date Developer Comment ---------- -------------------------------------------- ---------------------------------------------- 12/11/2011 "Rogério Peixoto" <rcbpeixoto@gmail.com> Initial Draft ---------- -------------------------------------------- ----------------------------------------------
  */
 public class AccountManager {
 
+	/**
+	 * @uml.property  name="instance"
+	 * @uml.associationEnd  
+	 */
 	private static AccountManager instance;
 
 	private Context context;
+	/**
+	 * @uml.property  name="user"
+	 * @uml.associationEnd  
+	 */
 	private User user;
+	/**
+	 * @uml.property  name="userRepository"
+	 * @uml.associationEnd  
+	 */
 	private UserRepository userRepository;
+	/**
+	 * @uml.property  name="firstAccess"
+	 */
 	private boolean firstAccess;
 
 	private AccountManager(Context context) {
@@ -49,6 +55,10 @@ public class AccountManager {
 		userRepository.deleteAll();
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="firstAccess"
+	 */
 	public boolean isFirstAccess() {
 		return this.firstAccess;
 	}

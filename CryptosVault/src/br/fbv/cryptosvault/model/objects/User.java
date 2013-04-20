@@ -3,16 +3,7 @@ package br.fbv.cryptosvault.model.objects;
 import java.io.Serializable;
 
 /**
- * Project: Cryptos Vault
- * Class: User
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft
- * 12/11/2011	 "Rogério Peixoto" <rcbpeixoto@gmail.com>	  Remoção de login inclusão de email
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: User REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft 12/11/2011	 "Rogério Peixoto" <rcbpeixoto@gmail.com>	  Remoção de login inclusão de email ----------    -------------------------------------------- ----------------------------------------------
  */
 public class User implements Serializable {
 	
@@ -29,6 +20,7 @@ public class User implements Serializable {
 	
 	/**
 	 * Atributos de usuario
+	 * @uml.property  name="id"
 	 */
 	private long id;
 	
@@ -92,10 +84,18 @@ public class User implements Serializable {
 		this.email = email;
 	}
 
+	/**
+	 * @return
+	 * @uml.property  name="id"
+	 */
 	public long getId() {
 		return id;
 	}
 
+	/**
+	 * @param id
+	 * @uml.property  name="id"
+	 */
 	public void setId(long id) {
 		this.id = id;
 	}

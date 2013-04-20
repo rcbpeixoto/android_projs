@@ -15,10 +15,21 @@ import br.fbv.cryptosvault.R;
 import br.fbv.cryptosvault.core.KeystoreAdapter;
 import br.fbv.cryptosvault.model.persistence.repositories.KeystoreRepository;
 
+/**
+ * @author  Rogério
+ */
 public class KeystoreActivity extends Activity implements OnClickListener,
 		OnItemLongClickListener {
 
+	/**
+	 * @uml.property  name="keystoreRepository"
+	 * @uml.associationEnd  
+	 */
 	private KeystoreRepository keystoreRepository;
+	/**
+	 * @uml.property  name="keystoreAdapter"
+	 * @uml.associationEnd  
+	 */
 	private KeystoreAdapter keystoreAdapter;
 	private ListView keystoreListView;
 

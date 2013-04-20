@@ -21,15 +21,7 @@ import br.fbv.cryptosvault.model.util.Constants;
 import br.fbv.cryptosvault.model.util.Util;
 
 /**
- * Project: Cryptos Vault
- * Class: LoginActivity
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 30/10/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>  	  InitialDraft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: LoginActivity REVISION HISTORY Date          Developer       Comment ----------    -------------------------------------------- ---------------------------------------------- 30/10/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>  	  InitialDraft ----------    -------------------------------------------- ----------------------------------------------
  */
 public class LoginActivity extends Activity{
 	
@@ -43,7 +35,15 @@ public class LoginActivity extends Activity{
 	
     private static Toast toast;
 	private EditText edtPassword;
+	/**
+	 * @uml.property  name="accountManager"
+	 * @uml.associationEnd  
+	 */
 	private AccountManager accountManager;
+	/**
+	 * @uml.property  name="soundManager"
+	 * @uml.associationEnd  
+	 */
 	private static SoundManager soundManager;
 	
 	protected void onCreate(android.os.Bundle savedInstanceState) {

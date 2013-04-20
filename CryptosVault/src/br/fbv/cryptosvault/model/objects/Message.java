@@ -4,15 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Project: Cryptos Vault
- * Class: Message
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: Message REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft ----------    -------------------------------------------- ----------------------------------------------
  */
 public class Message implements Serializable {
 	
@@ -37,17 +29,27 @@ public class Message implements Serializable {
 	
 	/**
 	 * Atributos
+	 * @uml.property  name="id"
 	 */
 	private long id;
 	
+	/**
+	 * @uml.property  name="userId"
+	 */
 	private long userId;
 	
+	/**
+	 * @uml.property  name="type"
+	 */
 	private long type;
 	
 	private Date receivedDate;
 	
 	private String from;
 	
+	/**
+	 * @uml.property  name="icRead"
+	 */
 	private long icRead;
 	
 	private String content;
@@ -60,31 +62,55 @@ public class Message implements Serializable {
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="id"
+	 */
 	public long getId() {
 		return id;
 	}
 
 
+	/**
+	 * @param id
+	 * @uml.property  name="id"
+	 */
 	public void setId(long id) {
 		this.id = id;
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="userId"
+	 */
 	public long getUserId() {
 		return userId;
 	}
 
 
+	/**
+	 * @param userId
+	 * @uml.property  name="userId"
+	 */
 	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="type"
+	 */
 	public long getType() {
 		return type;
 	}
 
 
+	/**
+	 * @param type
+	 * @uml.property  name="type"
+	 */
 	public void setType(long type) {
 		this.type = type;
 	}
@@ -110,11 +136,19 @@ public class Message implements Serializable {
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="icRead"
+	 */
 	public long getIcRead() {
 		return icRead;
 	}
 
 
+	/**
+	 * @param icRead
+	 * @uml.property  name="icRead"
+	 */
 	public void setIcRead(long icRead) {
 		this.icRead = icRead;
 	}

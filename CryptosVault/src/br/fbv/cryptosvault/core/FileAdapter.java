@@ -13,6 +13,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import br.fbv.cryptosvault.R;
 
+/**
+ * @author    Rogério
+ */
 public class FileAdapter extends BaseAdapter {
 
     private Context                                context;

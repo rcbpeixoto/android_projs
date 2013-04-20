@@ -4,21 +4,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Project: Cryptos Vault
- * Class: MorseCodeGenerator
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>   	  Initial draft
- * 30/10/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>   	  Code Revision
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: MorseCodeGenerator REVISION HISTORY Date          Developer       Comment ----------    -------------------------------------------- ---------------------------------------------- ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>   	  Initial draft 30/10/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>   	  Code Revision ----------    -------------------------------------------- ----------------------------------------------
  */
 public class MorseCodeGenerator {
 
 	private String text;
 
+	/**
+	 * @uml.property  name="morseCode"
+	 * @uml.associationEnd  
+	 */
 	private MorseCode morseCode;
 
 	/**

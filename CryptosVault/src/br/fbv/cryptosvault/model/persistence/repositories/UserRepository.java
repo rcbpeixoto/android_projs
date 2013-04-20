@@ -12,19 +12,14 @@ import br.fbv.cryptosvault.model.objects.User;
 import br.fbv.cryptosvault.model.persistence.DbHelper;
 
 /**
- * Project: Cryptos Vault
- * Class: UserRepository
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 08/11/2011    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft
- * 12/11/2011	 "Rogerio Peixoto" <rcbpeixoto@gmail.com>	  Change for singleton
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: UserRepository REVISION HISTORY Date          Developer       Comment ----------    -------------------------------------------- ---------------------------------------------- 08/11/2011    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft 12/11/2011	 "Rogerio Peixoto" <rcbpeixoto@gmail.com>	  Change for singleton ----------    -------------------------------------------- ----------------------------------------------
  */
 public class UserRepository {
 	
+	/**
+	 * @uml.property  name="instance"
+	 * @uml.associationEnd  
+	 */
 	private static UserRepository instance;
 	
 	public static final String TABLE_USER_NAME = "user";

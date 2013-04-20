@@ -17,15 +17,7 @@ import br.fbv.cryptosvault.view.LoginActivity;
 import br.fbv.cryptosvault.view.TabHostActivity;
 
 /**
- * Project: Cryptos Vault
- * Class: Notification Service
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 30/10/2011    "Rogerio Peixoto" <rcbpeixoto@gmail.com>     Initial Draft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: Notification Service REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- 30/10/2011    "Rogerio Peixoto" <rcbpeixoto@gmail.com>     Initial Draft ----------    -------------------------------------------- ----------------------------------------------
  */
 public class NotificationService extends Service {
 	
@@ -33,6 +25,10 @@ public class NotificationService extends Service {
 	
 	private static Timer timer = null;
 	private static TimerTask timerTask = null;
+	/**
+	 * @uml.property  name="refreshReceiver"
+	 * @uml.associationEnd  
+	 */
 	private RefreshReceiver refreshReceiver;
 	private NotificationManager notificationManager;
 	

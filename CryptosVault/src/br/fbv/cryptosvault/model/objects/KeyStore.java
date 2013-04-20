@@ -4,15 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Project: Cryptos Vault
- * Class: KeyStore
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: KeyStore REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- ##/##/####    "Erivan Nogueira" <erivan.spe@gmail.com>     Initial draft ----------    -------------------------------------------- ----------------------------------------------
  */
 public class KeyStore implements Serializable {
 	
@@ -35,11 +27,18 @@ public class KeyStore implements Serializable {
 	
 	/**
 	 * Atributos
+	 * @uml.property  name="id"
 	 */
 	private long id;
 	
+	/**
+	 * @uml.property  name="userId"
+	 */
 	private long userId;
 	
+	/**
+	 * @uml.property  name="password"
+	 */
 	private byte[] password;
 	
 	private Date creationDate;
@@ -57,31 +56,55 @@ public class KeyStore implements Serializable {
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="id"
+	 */
 	public long getId() {
 		return id;
 	}
 
 
+	/**
+	 * @param id
+	 * @uml.property  name="id"
+	 */
 	public void setId(long id) {
 		this.id = id;
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="userId"
+	 */
 	public long getUserId() {
 		return userId;
 	}
 
 
+	/**
+	 * @param userId
+	 * @uml.property  name="userId"
+	 */
 	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 
 
+	/**
+	 * @return
+	 * @uml.property  name="password"
+	 */
 	public byte[] getPassword() {
 		return password;
 	}
 
 
+	/**
+	 * @param password
+	 * @uml.property  name="password"
+	 */
 	public void setPassword(byte[] password) {
 		this.password = password;
 	}

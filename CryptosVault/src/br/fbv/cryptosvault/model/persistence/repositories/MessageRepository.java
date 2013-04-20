@@ -13,21 +13,17 @@ import br.fbv.cryptosvault.model.objects.Message;
 import br.fbv.cryptosvault.model.persistence.DbHelper;
 
 /**
- * Project: Cryptos Vault
- * Class: MessageRepository
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 12/11/2011    "Erivan Nogueira" <erivan.spe@gmail.com>   	  Initial draft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: MessageRepository REVISION HISTORY Date          Developer       Comment ----------    -------------------------------------------- ---------------------------------------------- 12/11/2011    "Erivan Nogueira" <erivan.spe@gmail.com>   	  Initial draft ----------    -------------------------------------------- ----------------------------------------------
  */
 
 public class MessageRepository {
 	
 	public static final String TABLE_MESSAGE_NAME = "message";
 
+	/**
+	 * @uml.property  name="instance"
+	 * @uml.associationEnd  
+	 */
 	private static MessageRepository instance;
 	
 	private SQLiteDatabase database;

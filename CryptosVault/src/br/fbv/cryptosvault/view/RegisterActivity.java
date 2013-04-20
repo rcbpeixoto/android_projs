@@ -12,8 +12,15 @@ import br.fbv.cryptosvault.model.exception.InvalidEmailException;
 import br.fbv.cryptosvault.model.exception.InvalidPasswordException;
 import br.fbv.cryptosvault.model.util.Util;
 
+/**
+ * @author  Rogério
+ */
 public class RegisterActivity extends Activity implements OnClickListener {
 	
+	/**
+	 * @uml.property  name="accountManager"
+	 * @uml.associationEnd  
+	 */
 	private AccountManager accountManager;
 	private EditText edtEmail;
 	private EditText edtPassword;

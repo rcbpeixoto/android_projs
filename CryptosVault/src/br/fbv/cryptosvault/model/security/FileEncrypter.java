@@ -27,19 +27,15 @@ import javax.crypto.spec.PBEParameterSpec;
 import android.content.Context;
 
 /**
- * Project: Cryptos Vault
- * Class: FileEncrypter
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 9/11/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>     Code Revision
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: FileEncrypter REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- 9/11/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>     Code Revision ----------    -------------------------------------------- ----------------------------------------------
  */
 public class FileEncrypter {
 	
 	//FileEncrypter instance for singleton
+	/**
+	 * @uml.property  name="instance"
+	 * @uml.associationEnd  
+	 */
 	private static FileEncrypter 	  instance;
 	
 	//Private hashtable for fileNames storage and display

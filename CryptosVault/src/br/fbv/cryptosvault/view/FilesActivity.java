@@ -40,15 +40,7 @@ import br.fbv.cryptosvault.model.security.FileEncrypter;
 import br.fbv.cryptosvault.model.util.Util;
 
 /**
- * Project: Cryptos Vault
- * Class: FilesActivity
- * 
- * REVISION HISTORY
- * 
- * Date          Developer       							  Comment
- * ----------    -------------------------------------------- ----------------------------------------------
- * 12/11/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>     Initial Draft
- * ----------    -------------------------------------------- ----------------------------------------------
+ * Project: Cryptos Vault Class: FilesActivity REVISION HISTORY Date          Developer       							  Comment ----------    -------------------------------------------- ---------------------------------------------- 12/11/2011    "Rogério Peixoto" <rcbpeixoto@gmail.com>     Initial Draft ----------    -------------------------------------------- ----------------------------------------------
  */
 public class FilesActivity extends Activity implements OnCheckedChangeListener, OnClickListener, OnItemClickListener {
 
@@ -73,9 +65,21 @@ public class FilesActivity extends Activity implements OnCheckedChangeListener, 
 	private List<File> encryptList;
 	private List<File> decryptList;
 
+	/**
+	 * @uml.property  name="fileAdapter"
+	 * @uml.associationEnd  
+	 */
 	private FileAdapter fileAdapter;
+	/**
+	 * @uml.property  name="safeFileAdapter"
+	 * @uml.associationEnd  
+	 */
 	private SafeFileAdapter safeFileAdapter;
 
+	/**
+	 * @uml.property  name="encrypterTool"
+	 * @uml.associationEnd  
+	 */
 	private FileEncrypter encrypterTool;
 
 	private File currentDir;

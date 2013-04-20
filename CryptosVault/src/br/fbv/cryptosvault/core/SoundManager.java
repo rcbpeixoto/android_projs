@@ -10,8 +10,7 @@ import br.fbv.cryptosvault.R;
 
 /**
  * Classe responsável por controle de audio
- * @author Rogerio Peixoto
- *
+ * @author  Rogerio Peixoto
  */
 public class SoundManager {
 
@@ -20,6 +19,10 @@ public class SoundManager {
     public static final int     LOGIN_WRONG = 2;
 
     private static final int    MAXSTREAMS  = 1;
+    /**
+	 * @uml.property  name="instance"
+	 * @uml.associationEnd  
+	 */
     private static SoundManager instance;
 
     private SoundPool           mSoundPool;
